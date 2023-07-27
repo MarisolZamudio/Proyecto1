@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Empleados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>HOTEL MARBLUE</h1>
+    </header>
+    <main>
+        <form id="registro-empleados-form">
+            <h2>REGISTRO DE EMPLEADOS</h2>
+            <label for="empleado">Nombre:<span> *</span></label>
+            <input type="text" id="empleado" name="empleado" required>
+            <label for="apellido">Apellido:<span> *</span></label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="cedula">Número de Cédula:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" required>
+            <label for="edad">Edad:<span> *</span></label>
+            <input type="number" id="edad" name="edad" required>
+            <label for="telefono">Telefono:<span> *</span></label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="cargo">Cargo requerida:<span> *</span></label>
+            <select id="cargo" name="cargo">
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Administador">Administrador</option>
+                <option value="Conductor">Conductor</option>
+                <option value="Servicios generales">Servicios generales</option>
+                <option value="Cocinero">Cocinero</option>
+                <option value="Guia turistico">Guia turistico</option>
+                <option value="Vigilante">Vigilante</option>
+                <option value="Mesero">Mesero</option>
+                <option value="Bartender">Bartender</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="boton-container">
+            <input type="button" id="botonVolver" value="Volver">
+        </div>
+    </main>
+    <script src="volver.js"></script>
+    <script src="registro-empleados.js"></script>
+</body>
+
+</html>
